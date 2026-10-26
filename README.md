@@ -42,7 +42,7 @@
 src/cfe/                  исходники расширения в формате выгрузки Конфигуратора (XML + BSL)
 tools/load-extension.ps1  загрузка расширения в базу и обновление БД
 tools/fill-uuids.ps1      выдача GUID новым объектам (маркер @NEWUUID@)
-tools/smoke-test.ps1      дымовой тест через COM-соединение
+tools/smoke-test.js       дымовой тест через COM-соединение
 docs/PLAN.md              план реализации
 ```
 
@@ -60,8 +60,13 @@ docs/PLAN.md              план реализации
 ## Проверка
 
 ```powershell
-C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -File tools\smoke-test.ps1
+C:\Windows\SysWOW64\cscript.exe //nologo //U tools\smoke-test.js
 ```
 
 Тест создает склад и товар и проходит сценарий: приход 10 → резерв 4 → резерв 7 (отказ) →
-расход 7 без резерва (отказ) → расход 4 по резерву → отчет → этикетки (PDF во временный каталог).
+расход 7 без резерва (отказ) → расход 4 по резерву → отчет → этикетки (PDF в `%TEMP%\cfe-smoke`).
+
+Нужен зарегистрированный COM-коннектор той же разрядности, что и `cscript`
+(для x86: `regsvr32 "C:\Program Files (x86)\1cv8\<версия>\bin\comcntr.dll"` от администратора).
+Тест написан на JScript, потому что PowerShell не видит динамические члены COM-объектов 1С
+(метаданные, реквизиты). Файл хранится в UTF-16 LE — этого требует `cscript`.
