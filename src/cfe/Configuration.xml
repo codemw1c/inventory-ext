@@ -50,7 +50,9 @@
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
-			<DefaultRoles/>
+			<DefaultRoles>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ск_СкладскойУчет</xr:Item>
+			</DefaultRoles>
 			<Vendor/>
 			<Version>1.0.0.1</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
@@ -63,6 +65,19 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>ск_СкладскойУчет</Subsystem>
+			<Role>ск_СкладскойУчет</Role>
+			<CommonModule>ск_ПечатьЭтикетокВызовСервера</CommonModule>
+			<CommonModule>ск_СкладскойУчетСервер</CommonModule>
+			<CommonModule>ск_ШтрихкодыСервер</CommonModule>
+			<Catalog>ск_Номенклатура</Catalog>
+			<Catalog>ск_Склады</Catalog>
+			<Document>ск_ПриходТоваров</Document>
+			<Document>ск_РасходТоваров</Document>
+			<Document>ск_РезервТоваров</Document>
+			<Report>ск_ТоварыВРезерве</Report>
+			<AccumulationRegister>ск_ТоварыВРезерве</AccumulationRegister>
+			<AccumulationRegister>ск_ТоварыНаСкладах</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="bf0f70a7-dce6-4335-8617-379223b9fe2b">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ск_Номенклатура" category="Object">
+				<xr:TypeId>95941588-53c2-47a0-87cb-b52be9fc3700</xr:TypeId>
+				<xr:ValueId>b664711b-5b03-4a9f-8dd6-4f301f6c28c1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ск_Номенклатура" category="Ref">
+				<xr:TypeId>ca09650a-10a5-4da9-9974-7da52dd168dc</xr:TypeId>
+				<xr:ValueId>64e62770-3461-47cc-83a2-16f4f3847db8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ск_Номенклатура" category="Selection">
+				<xr:TypeId>a2360f3e-53c7-4145-8722-d8785c04e0d8</xr:TypeId>
+				<xr:ValueId>cf1d8f68-fdf9-49a1-9372-c4e76dcdca7c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ск_Номенклатура" category="List">
+				<xr:TypeId>3d44c5b7-1f13-46e1-b1e0-0d4ffb48df9d</xr:TypeId>
+				<xr:ValueId>1f997213-ec1e-4e1a-97f9-ba2dfa57486f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ск_Номенклатура" category="Manager">
+				<xr:TypeId>a42bce44-7d0a-445b-ac04-7708af807ecc</xr:TypeId>
+				<xr:ValueId>de33027d-ec90-439d-8857-199576de1659</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ск_Номенклатура</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Hierarchical>false</Hierarchical>
+			<UseStandardCommands>true</UseStandardCommands>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>150</DescriptionLength>
+			<CodeType>Number</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<InputByString>
+				<xr:Field>Catalog.ск_Номенклатура.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.ск_Номенклатура.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.ск_Номенклатура.Attribute.Артикул</xr:Field>
+				<xr:Field>Catalog.ск_Номенклатура.Attribute.Штрихкод</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</ObjectPresentation>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="0d79f615-1d7a-46f8-b9b6-fbccf66aeda2">
+				<Properties>
+					<Name>Артикул</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>25</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<Indexing>Index</Indexing>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="45dd6a5a-e5b1-4bc2-8e7c-907034a34f95">
+				<Properties>
+					<Name>ЕдиницаИзмерения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<FillChecking>ShowError</FillChecking>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="010b6b9d-7720-4913-bd9a-bd0d6381277d">
+				<Properties>
+					<Name>Штрихкод</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Штрихкод (EAN-13)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>13</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если не заполнен, при записи формируется внутренний штрихкод EAN-13 с префиксом 2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Indexing>Index</Indexing>
+				</Properties>
+			</Attribute>
+			<Command uuid="0c496a4d-53d3-4014-826f-3154992b0100">
+				<Properties>
+					<Name>ПечатьЭтикеток</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать этикеток</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ск_Номенклатура</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Напечатать этикетки со штрихкодом для выделенной номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

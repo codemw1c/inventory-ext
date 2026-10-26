@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="d53bdad8-0125-41df-87d4-7376eae8ce93">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ск_РезервТоваров" category="Object">
+				<xr:TypeId>c095d94b-5c15-4d41-8875-3eef1e1db451</xr:TypeId>
+				<xr:ValueId>2c2a4667-76a9-4e6c-bd57-34f60bf6e38e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ск_РезервТоваров" category="Ref">
+				<xr:TypeId>ee1e6c37-713b-4ebf-8b20-4ea09838241f</xr:TypeId>
+				<xr:ValueId>59fbeaca-fdfd-4f3a-9a42-afe302cf45d5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ск_РезервТоваров" category="Selection">
+				<xr:TypeId>caa7998b-f601-413f-8700-f25c1cebb1df</xr:TypeId>
+				<xr:ValueId>8c735c8c-09b5-4ba0-b7a1-c997fe3d0440</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ск_РезервТоваров" category="List">
+				<xr:TypeId>63ba5c63-458d-4313-b3cb-1fc41db9387f</xr:TypeId>
+				<xr:ValueId>a859101c-2783-4a9c-a77a-9bd8d2fc3e66</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ск_РезервТоваров" category="Manager">
+				<xr:TypeId>0f7bacd3-2500-4b02-925f-22a59c2b7217</xr:TypeId>
+				<xr:ValueId>e79f2179-7cb2-4555-8fbb-27f9c50fa57f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ск_РезервТоваров</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резерв товаров</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<NumberPeriodicity>Year</NumberPeriodicity>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<Posting>Allow</Posting>
+			<RealTimePosting>Deny</RealTimePosting>
+			<RegisterRecordsDeletion>AutoDelete</RegisterRecordsDeletion>
+			<RegisterRecordsWritingOnPost>WriteModified</RegisterRecordsWritingOnPost>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ск_ТоварыВРезерве</xr:Item>
+			</RegisterRecords>
+			<PostInPrivilegedMode>true</PostInPrivilegedMode>
+			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резерв товаров</v8:content>
+				</v8:item>
+			</ObjectPresentation>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервы товаров</v8:content>
+				</v8:item>
+			</ListPresentation>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="d1d0c0ce-1733-4bb6-9f07-4d2c6499dfc5">
+				<Properties>
+					<Name>Склад</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ск_Склады</v8:Type>
+					</Type>
+					<FillChecking>ShowError</FillChecking>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6535b340-da94-4263-8be7-8548649f130e">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<MultiLine>true</MultiLine>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="08d2fd71-e538-4e2c-a49c-e693526e3c7d">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ск_РезервТоваров.Товары" category="TabularSection">
+						<xr:TypeId>bbabf33e-50f8-4168-abf4-fcc25b495375</xr:TypeId>
+						<xr:ValueId>180c6a72-c89c-43e8-834d-374896d46788</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ск_РезервТоваров.Товары" category="TabularSectionRow">
+						<xr:TypeId>b0e1001c-6924-4331-8873-99fb5b8d8435</xr:TypeId>
+						<xr:ValueId>5a1f1805-7412-4b63-a057-5d5e3aa8491d</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Товары</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<FillChecking>ShowError</FillChecking>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="699552f9-a35b-45ae-a6b4-13e9932d938e">
+						<Properties>
+							<Name>Номенклатура</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ск_Номенклатура</v8:Type>
+							</Type>
+							<FillChecking>ShowError</FillChecking>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="ee03c2ab-30f1-44ae-b0c8-44451081381f">
+						<Properties>
+							<Name>Количество</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<FillChecking>ShowError</FillChecking>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="c27e332f-7aaf-4dad-b044-c1bb3c1b4a60">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ск_Склады" category="Object">
+				<xr:TypeId>1341e3ab-a3d5-464c-a8de-a7c5bb2f2a63</xr:TypeId>
+				<xr:ValueId>d5c7b899-a8a1-43f1-947a-e7d6e1e799a7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ск_Склады" category="Ref">
+				<xr:TypeId>5e08b6eb-26e6-4a3f-a067-9bf9eac2fd0a</xr:TypeId>
+				<xr:ValueId>e908648a-d1a9-448d-853c-67a931762cd1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ск_Склады" category="Selection">
+				<xr:TypeId>d99e3fd6-d964-49e4-86c1-da89d26f1cd3</xr:TypeId>
+				<xr:ValueId>647945db-3dca-44ad-b531-b75f02566e61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ск_Склады" category="List">
+				<xr:TypeId>f3c72e39-56de-41dd-bdd5-4ec0b9b8c535</xr:TypeId>
+				<xr:ValueId>36a2b601-97d2-43e5-8819-681ed1a8c569</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ск_Склады" category="Manager">
+				<xr:TypeId>ab617919-6136-43b0-8566-440657f79f9c</xr:TypeId>
+				<xr:ValueId>fb12c8fb-afbc-4eca-8802-c1eb00df1ddf</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ск_Склады</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склады</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Hierarchical>false</Hierarchical>
+			<UseStandardCommands>true</UseStandardCommands>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>100</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</ObjectPresentation>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>
